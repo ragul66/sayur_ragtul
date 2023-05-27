@@ -1,0 +1,46 @@
+class headoffice:
+	*company details
+	*employee details
+	*project details
+
+
+class company:
+	*branch
+	*employees
+	*projects
+
+class employees:
+	*branch
+	*position
+	*experience
+	*salary
+
+siva=employee1()
+branch=digital marketing()
+experience=10years()
+salary=25000
+
+Ram=employee2()
+branch=Testing()
+experience=12years()
+salary=30000
+
+company.employee1()
+company.employee2()
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
