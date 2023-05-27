@@ -3,17 +3,50 @@
 #individual. Input is Salary. Optional input - any deductions.
 
 
-income=input("Enter the Income amount")
-if(income==5,00,000):
-    print("Incometax=NIL")
-elif(income>5,00,000 and income<=10,00,000):
-    income=
-
-
+"""total_income=input("Enter the total income amount")
+if (total_income<=250000):
+    print("NIL")
+elif (total_income<=500000):
+    tax=(total_income - 250000, 5)
+    print("₹",tax)
+elif (total_income <= 750000):
+    tax=(total_income - 500000, 10) + 12500
+    print("₹",tax)
+elif (total_income <= 1000000):
+    tax=(total_income - 750000, 15) + 37500
+    print("₹",tax)
+elif (total_income <= 1250000):
+    tax=(total_income - 1000000, 20) + 75000
+    print("₹",tax)
+elif (total_income <= 1500000):
+    tax=(total_income - 1250000, 25) + 125000
+    print("₹",tax)
+else:
+    tax=(total_income - 1500000, 30) + 187500
+    print("₹",tax)"""
 
 ############ Problem 2 ####
 #Calculate the BMI and if the person is underweihgt/normal/overweight/obese
 #Google how to calculate BMI and decide on the input.
+
+Height=float(input("Enter your height in centimetres: "))
+Weight=float(input("Enter your Weight in Kg: "))
+Height = Height/100
+BMI=Weight/(Height*Height)
+print("your Body Mass Index is: ",BMI)
+if(BMI>0):
+	if(BMI<=16):
+		print("you are severely underweight")
+	elif(BMI<=18.5):
+		print("you are underweight")
+	elif(BMI<=25):
+		print("you are Healthy")
+	elif(BMI<=30):
+		print("you are overweight")
+	else: print("you are severely overweight")
+else:("enter valid details")
+
+
 
 ########## Problem 3 ##########
 ##buy choc and cake
@@ -32,7 +65,7 @@ elif(income>5,00,000 and income<=10,00,000):
 # if the student has 50 or less  in all subjects  Grade is F, otherwise Grade is D.
 
 #Code
-mark1 =90
+"""mark1 =90
 mark2 =100
 mark3 = 60
 
@@ -46,3 +79,4 @@ elif(mark1<=50 and mark2<=50 and mark3<=50):
     print ("Grade F")
 else:
     print ("Grade D")
+"""
