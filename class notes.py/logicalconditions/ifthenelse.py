@@ -3,7 +3,7 @@
 #individual. Input is Salary. Optional input - any deductions.
 
 
-"""total_income=input("Enter the total income amount")
+"""total_income=int(input("Enter the total income amount"))
 if (total_income<=250000):
     print("NIL")
 elif (total_income<=500000):
@@ -28,7 +28,7 @@ else:
 ############ Problem 2 ####
 #Calculate the BMI and if the person is underweihgt/normal/overweight/obese
 #Google how to calculate BMI and decide on the input.
-
+"""
 Height=float(input("Enter your height in centimetres: "))
 Weight=float(input("Enter your Weight in Kg: "))
 Height = Height/100
@@ -46,7 +46,12 @@ if(BMI>0):
 	else: print("you are severely overweight")
 else:("enter valid details")
 
-
+Example:
+Enter your height in centimetres: 167
+Enter your Weight in Kg: 55
+your Body Mass Index is:  19.721036967980208
+you are Healthy
+"""
 
 ########## Problem 3 ##########
 ##buy choc and cake
@@ -56,6 +61,23 @@ else:("enter valid details")
 #Hint - you can buy choc/Cake only if shop has it.
 
 #find how many choc and cake the user can buy.
+
+
+"""shopowner=input("How many choc you have??")
+shopowner=input("How many cake you have??")
+
+choc=200
+cake=150
+
+budget=int(input("Enter Your Budget you have:"))
+choc=int(input())
+cake=int(input())
+if (budget=600):
+    print("youcan"""
+
+
+
+
 
 ############## Problem 4 ##############
 #Calculate the Grade for a student, using 3 marks.
@@ -71,9 +93,9 @@ mark3 = 60
 
 if(mark1 == 100 or mark2 == 100 or mark3 == 100): #at least one mark is 100
     print ("Grade A")
-elif(mark1>90 or mark2>90 or mark3>90):
+elif(mark1>=90 or mark2>=90 or mark3>=90):
     print ("Grade B")
-elif (mark1>60 or mark2>60 or mark3>60):
+elif (mark1>=60 or mark2>=60 or mark3>=60):
     print("Garde C")
 elif(mark1<=50 and mark2<=50 and mark3<=50):
     print ("Grade F")
