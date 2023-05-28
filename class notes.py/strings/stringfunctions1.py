@@ -67,7 +67,9 @@ asanthVay
 #eg I am Python
 #answer Iay maay nPythoay (in Python 'o' is the first vowel)
 
-"""inputSentence = #FillinMissingCode
+
+"""
+inputSentence = "Python Programming"
 pigLatinKey = 'ay'
 vowels = ['a','e','i','o','u']
 
@@ -75,11 +77,25 @@ for word in inputSentence.split(): #gets the word in a sentence
     #take the first chars until a vowel
     first_vowel_index = 0
     #FillinMissingCode - check if the word has more than one char
-    for index, char in enumerate(word): #returns both the index and the char in the word
-         #FillinMissingCode - check if the char is vowel or not
-        
-     
+    if len(word) > 1:
+        for index, char in enumerate(word): #returns both the index and the char in the word
+            #FillinMissingCode - check if the char is vowel or not
+            if char.lower() in vowels:
+                first_vowel_index = index
+                break
 
-    word = #FillinMissingCode  
-    print( #FillinMissingCode)
-    """
+    word = word[first_vowel_index:] + word[:first_vowel_index] + pigLatinKey
+    print(word)
+"""
+
+"""
+Example
+#input="Hello World"
+elloHay
+orldWay
+
+Example
+#input="Python Programming"
+onPythay
+ogrammingPray
+"""
