@@ -7,17 +7,27 @@
 
 noOfCake = 0
 noOfChoc = 0
-#get budget
-#FillinMissingCode
 
-while (money >= 150) : 
-    if (money > 200) :
-        #buy choc
+#get budget from user
+money = float(input("Enter your budget: "))
+
+while money >= 150:
+    if money >= 200:
+        #buy chocolate
         noOfChoc += 1
         money -= 200
-    
-    #FillinMissingCode for buying cake
+    else:
+        #buy cake
+        noOfCake += 1
+        money -= 150
 
+#print the number of cakes and chocolates
+print("Number of cakes:", noOfCake)
+print("Number of chocolates:", noOfChoc)
 
-#print no of cakes and choc
-#FillinMissingCode
+"""
+Example
+Enter your budget: 600
+Number of cakes: 0
+Number of chocolates: 3
+"""
