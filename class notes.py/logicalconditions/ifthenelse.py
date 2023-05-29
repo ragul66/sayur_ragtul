@@ -3,32 +3,37 @@
 #individual. Input is Salary. Optional input - any deductions.
 
 
-"""total_income=int(input("Enter the total income amount"))
-if (total_income<=250000):
-    print("NIL")
-elif (total_income<=500000):
-    tax=(total_income - 250000, 5)
-    print("₹",tax)
-elif (total_income <= 750000):
-    tax=(total_income - 500000, 10) + 12500
-    print("₹",tax)
-elif (total_income <= 1000000):
-    tax=(total_income - 750000, 15) + 37500
-    print("₹",tax)
-elif (total_income <= 1250000):
-    tax=(total_income - 1000000, 20) + 75000
-    print("₹",tax)
-elif (total_income <= 1500000):
-    tax=(total_income - 1250000, 25) + 125000
-    print("₹",tax)
-else:
-    tax=(total_income - 1500000, 30) + 187500
-    print("₹",tax)"""
+def calculate_income_tax(salary, deductions=0):
+    taxable_income = salary - deductions
+
+    if taxable_income <= 250000:
+        tax = 0
+    elif 250001 <= taxable_income <= 500000:
+        tax = (taxable_income - 250000) * 0.05
+    elif 500001 <= taxable_income <= 1000000:
+        tax = 12500 + (taxable_income - 500000) * 0.2
+    else:
+        tax = 112500 + (taxable_income - 1000000) * 0.3
+
+    return tax
+
+salary = float(input("Enter the salary: "))
+deductions = float(input("Enter the deductions (optional): "))
+
+income_tax = calculate_income_tax(salary, deductions)
+print("Income tax to be paid: ₹", income_tax)
+
+"""
+Example
+Enter the salary: 1000000
+Enter the deductions (optional): 20000
+Income tax to be paid: ₹ 108500.0
+"""
 
 ############ Problem 2 ####
 #Calculate the BMI and if the person is underweihgt/normal/overweight/obese
 #Google how to calculate BMI and decide on the input.
-"""
+
 Height=float(input("Enter your height in centimetres: "))
 Weight=float(input("Enter your Weight in Kg: "))
 Height = Height/100
@@ -46,6 +51,7 @@ if(BMI>0):
 	else: print("you are severely overweight")
 else:("enter valid details")
 
+"""
 Example:
 Enter your height in centimetres: 167
 Enter your Weight in Kg: 55
@@ -62,18 +68,33 @@ you are Healthy
 
 #find how many choc and cake the user can buy.
 
+choc_price = 200
+cake_price = 150
 
-"""shopowner=input("How many choc you have??")
-shopowner=input("How many cake you have??")
+# Get budget from the user
+budget = float(input("Enter your budget: "))
 
-choc=200
-cake=150
+# Get the total number of chocolates and cakes available at the shop
+total_choc = int(input("Enter the total number of chocolates available: "))
+total_cake = int(input("Enter the total number of cakes available: "))
 
-budget=int(input("Enter Your Budget you have:"))
-choc=int(input())
-cake=int(input())
-if (budget=600):
-    print("youcan"""
+# Calculate the maximum number of chocolates and cakes that can be bought
+max_choc = min(total_choc, int(budget / choc_price))
+max_cake = min(total_cake, int(budget / cake_price))
+
+# Display the maximum number of chocolates and cakes that can be bought
+print("You can buy a maximum of", max_choc, "chocolates.")
+print("You can buy a maximum of", max_cake, "cakes.")
+
+
+"""
+Example
+Enter your budget: 1000
+Enter the total number of chocolates available: 6
+Enter the total number of cakes available: 7
+You can buy a maximum of 5 chocolates.
+You can buy a maximum of 6 cakes.
+"""
 
 
 
@@ -87,7 +108,7 @@ if (budget=600):
 # if the student has 50 or less  in all subjects  Grade is F, otherwise Grade is D.
 
 #Code
-"""mark1 =90
+mark1 =90
 mark2 =100
 mark3 = 60
 
@@ -101,4 +122,8 @@ elif(mark1<=50 and mark2<=50 and mark3<=50):
     print ("Grade F")
 else:
     print ("Grade D")
+
+"""
+Example
+Grade A
 """
