@@ -6,7 +6,7 @@
 
 
 
-"""first_friend_colors = []
+first_friend_colors = []
 second_friend_colors = []
 common_colors = []
 
@@ -43,17 +43,24 @@ if second_friend_colors:
     for color in second_friend_colors:
         if color not in first_friend_colors:
             print(color)
+
 """
-
-"""first_friend_color=[]
-second_friend_color=[]
-common_color=[]
-
-#ask fisrt friend colors he/she like
-one_fcolor=input("How many favowrite colors you have my friend??")
-for color in range(one_fcolor):
-    first_friend_color.append(color)
-    print(first_friend_color)
+Example
+How many favorite colors does the first friend have? 3 
+Enter a favorite color: red
+Enter a favorite color: white
+Enter a favorite color: black
+How many favorite colors does the second friend have? 4
+Enter a favorite color: white
+Enter a favorite color: orange
+Enter a favorite color: yellow
+Enter a favorite color: blue
+You both like the following colors:
+white
+Colors that are not in the first friend's list:
+orange
+yellow
+blue
 """
 
 ############## Problem 2 ####################
