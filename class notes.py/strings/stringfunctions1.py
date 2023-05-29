@@ -3,7 +3,6 @@
 #eg input = abcdefg , output = ab cd ef g
 
 
-"""
 inputString = "RAGULVASANTH"#FillinMissingCode
 i = 0 #counter to track the chars
 newString = ""
@@ -15,7 +14,7 @@ while i < len(inputString):
 #FillinMissingCode
 
 print (newString)
-"""
+
 
 """
 Example
@@ -30,12 +29,21 @@ RA GU LV AS AN TH
 #RA
 #RAM
 
-# myName = "RAGUL"
-# for letter in myName:
-#     print(letter)   
-#     letter+=letter()
-    
+Myname = "RAGUL"
 
+for i in range(len(Myname)):
+    print(Myname[:i+1])
+
+
+
+"""
+Example
+R
+RA
+RAG
+RAGU
+RAGUL
+"""
     
     
         
@@ -46,7 +54,7 @@ RA GU LV AS AN TH
 #eg I am Python
 #answer Iay maay ythonPay
 
-"""inputSentence = "Ragul Vasanth"#FillinMissingCode
+inputSentence = "Ragul Vasanth"#FillinMissingCode
 pigLatinKey = 'ay'
 for word in inputSentence.split(): #gets the word in a sentence
     #take the first char
@@ -54,7 +62,7 @@ for word in inputSentence.split(): #gets the word in a sentence
      #FillinMissingCode - check if the word has more than one char
 
     word = word[1:] + firstChar + pigLatinKey
-    print(word)"""
+    print(word)
 """
 Example:
 agulRay
@@ -68,7 +76,7 @@ asanthVay
 #answer Iay maay nPythoay (in Python 'o' is the first vowel)
 
 
-"""
+
 inputSentence = "Python Programming"
 pigLatinKey = 'ay'
 vowels = ['a','e','i','o','u']
@@ -86,7 +94,7 @@ for word in inputSentence.split(): #gets the word in a sentence
 
     word = word[first_vowel_index:] + word[:first_vowel_index] + pigLatinKey
     print(word)
-"""
+
 
 """
 Example
