@@ -45,18 +45,12 @@ salespermonth=multiplyTwoNumbers(totalsales,4)
 #calculate profit.
 profit=subtractAfromB(salespermonth,employeeSalary)
 
-"""
-Example
-The avg sales is  2761
-"""
-
-
- 
-
-
-
 #Call divide function to get the average from all three subjects
 avg=divideAFromB(3,totalsales)
 #FillinMissingCode
 
 print("The avg sales is ", avg)
+"""
+Example
+The avg sales is  2761
+"""

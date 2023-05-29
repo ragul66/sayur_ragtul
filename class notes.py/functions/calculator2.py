@@ -39,3 +39,8 @@ avg = divideAFromB(3, addTwoNumbers(addTwoNumbers(avgMaths, avgScience), avgHist
 #FillinMissingCode
 
 print("The avg mark is ", avg)
+
+"""
+Example
+The avg mark is  65.13333333333333
+"""
