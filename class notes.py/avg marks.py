@@ -33,13 +33,25 @@ print("Average mark=",avg)
 # 98
 # Average mark= 68.8
 
-#using while loop
 total = 0
 noOfStudents = 5
 i = 0
-while (i < noOfStudents):
-     mark=float(input("Enter the marks you got"))
 
-     total += mark
-     i += 1
-print ("Avg is ",)
+while i < noOfStudents:
+    # Get user input
+    mark = int(input("Enter the mark for student " + str(i + 1) + ": "))
+    total += mark
+    i += 1
+
+average = total / noOfStudents
+print("Avg is", average)
+
+"""
+Example
+Enter the mark for student 1: 89
+Enter the mark for student 2: 56
+Enter the mark for student 3: 45
+Enter the mark for student 4: 34
+Enter the mark for student 5: 56
+Avg is 56.0
+"""
