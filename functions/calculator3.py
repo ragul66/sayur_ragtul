@@ -45,6 +45,10 @@ salespermonth=multiplyTwoNumbers(totalsales,4)
 #calculate profit.
 profit=subtractAfromB(salespermonth,employeeSalary)
 
+"""
+Example
+The avg sales is  2761
+"""
 
 
  
