@@ -5,27 +5,43 @@
 #Continue until they is atleast 3 movies they both like
 
 #init variables
-movies = input("What movies you like ?")
-movies=[]
-#convert movies into a List
-#FillinMissingCode
+# Ask the first friend for the movies they like and save it in a list
+"""movies = input("What movies do you like? (Separate multiple movies with commas): ").split(',')
 
-commonMovieCount = 0
-while (True) :
-    #ask the second friend for one movie at a time
-    movie = input ( )#FillinMissingCode)
-    #Check if this movie is in the movie list
-    #FillinMissingCode
+# Convert movies into a list
+movies_list = [movie.strip() for movie in movies]
 
-    #if present, 
-    commonMovieCount
-    #check if we reached the max
-    if(commonMovieCount >= 3):
-        break;
-    else
-        print ("Try again")
+common_movie_count = 0
+common_movies = []
 
-print () #FillinMissingCode - list all the common movies
+while True:
+    # Ask the second friend for a movie
+    movie = input("What movie do you like? ")
+
+    # Check if the movie is in the first friend's list
+    if movie in movies_list:
+        common_movie_count += 1
+        common_movies.append(movie)
+
+        # Check if we reached the minimum count of common movies
+        if common_movie_count >= 3:
+            break
+        else:
+            print("You both like", movie)
+    else:
+        print("Try again")
+
+# Print the list of common movies
+print("Common movies:")
+for movie in common_movies:
+    print(movie)
+"""
+
+"""
+What movies do you like? (Separate multiple movies with commas): blackthunder,marvel,antman
+What movie do you like? marvel,galaxy,avengers
+Try again
+"""
 
 
 ############## Problem  2 #################### 
@@ -37,22 +53,41 @@ print () #FillinMissingCode - list all the common movies
 # this month also, then he gets additional Rs5000.
 
 monthlySalesList = [5,23,21,14,23,12,4,12,22,22,34,12]  # Sample number of phones sold in each month in a year
-#FillinMissingCode - initialise all the variables needed
+
+baseSalary = 10000
+bonusPerFivePhones = 5000
+bonusPerAdditionalPhone = 1100
+additionalBonus = 5000
+
+previousMonthSalary = baseSalary
 
 for month, phoneCount in enumerate(monthlySalesList):
-    #calculate the Salary using If stmts
-    #FillinMissingCode
-    currentMonthSalary = #FillinMissingCode
-    print (f"This month's salary before additional bonus {currentMonthSalary}") 
+    # Calculate the Salary using If statements
 
-    #check for condition #If the salesman's salary is more than Rs20000 in the previous month and sells 20 or more phones 
+    # Check if the salesman's salary is more than Rs20000 in the previous month and sells 20 or more phones
     # this month also, then he gets additional Rs5000.
+    if previousMonthSalary > 20000 and phoneCount >= 20:
+        currentMonthSalary = baseSalary + (bonusPerFivePhones * (phoneCount // 5)) + (bonusPerAdditionalPhone * (phoneCount - 5)) + additionalBonus
+    else:
+        currentMonthSalary = baseSalary + (bonusPerFivePhones * (phoneCount // 5)) + (bonusPerAdditionalPhone * (phoneCount - 5))
 
-    if(phoneCount < 20):
-        previousMonthSalary = currentMonthSalary #we set this so that, we can use this info in the next iteration
-        continue #no need to calculate anything because <20 phones sold
-    
-    #calculate the new salary
-    currentMonthSalary =   #FillinMissingCode
-    print(f"This month's salary after additional bonus {currentMonthSalary}")
-    previousMonthSalary = currentMonthSalary #Why are we doing this?
+    print(f"This month's salary before additional bonus: {currentMonthSalary}")
+
+    # Store the current month's salary as the previous month's salary for the next iteration
+    previousMonthSalary = currentMonthSalary
+"""
+Example:
+This month's salary before additional bonus: 15000
+This month's salary before additional bonus: 49800
+This month's salary before additional bonus: 52600
+This month's salary before additional bonus: 29900
+This month's salary before additional bonus: 54800
+This month's salary before additional bonus: 27700
+This month's salary before additional bonus: 8900
+This month's salary before additional bonus: 27700
+This month's salary before additional bonus: 53700
+This month's salary before additional bonus: 53700
+This month's salary before additional bonus: 76900
+This month's salary before additional bonus: 27700
+
+"""
