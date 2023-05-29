@@ -5,13 +5,13 @@
 # Mark 2 for Student 1 is 67
 # Mark 1 for Student 2 is 56 
 #etc
-"""
+
 for student in range(1, 4):
     student_name = input(f"Enter name for Student {student}: ")
     for mark in range(1, 4):
       input_mark = float(input(f"Enter Mark {mark} for Student {student}: "))
       print(f"Mark {mark} for {student_name} is {input_mark}")
-"""
+
 """
 Example
 Enter name for Student 1: ragul
@@ -47,13 +47,13 @@ Mark 3 for vasanth is 89.0
 
 ######## Problem  2 ###############
 #Print multiplication tables from 7 to 16, each number upto 12 rows.
-"""for num in range(7, 17):
+for num in range(7, 17):
     print(f"Multiplication Table of {num}:")
     for i in range(1, 13):
         result = num * i
         print(f"{num} x {i} = {result}")
     print()
-"""
+
 
 """
 Multiplication Table of 7:
