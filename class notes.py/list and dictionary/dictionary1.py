@@ -18,3 +18,8 @@ for word in words:
 
 print(countOfWords)
 
+
+"""
+Example
+{'This': 1, 'is': 1, 'a': 2, 'cat': 1, 'and': 2, 'it': 1, 'has': 1, 'tail': 1, 'two': 1, 'eyes': 1}
+"""
