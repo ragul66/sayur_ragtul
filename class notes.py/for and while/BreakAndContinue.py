@@ -6,7 +6,7 @@
 
 #init variables
 # Ask the first friend for the movies they like and save it in a list
-"""movies = input("What movies do you like? (Separate multiple movies with commas): ").split(',')
+movies = input("What movies do you like? (Separate multiple movies with commas): ").split(',')
 
 # Convert movies into a list
 movies_list = [movie.strip() for movie in movies]
@@ -35,7 +35,7 @@ while True:
 print("Common movies:")
 for movie in common_movies:
     print(movie)
-"""
+
 
 """
 What movies do you like? (Separate multiple movies with commas): blackthunder,marvel,antman
