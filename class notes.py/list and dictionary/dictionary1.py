@@ -18,5 +18,3 @@ for word in words:
 
 print(countOfWords)
 
-########## Program 2
-#
