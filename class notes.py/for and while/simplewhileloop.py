@@ -2,7 +2,7 @@
 #Write a program that prints out a diamond shape using $.
 #After printing each line, wait for user input. If the user presses space, continue
 #If the users presses any other key, stop printing. Maximum 10 lines
-"""
+
 def print_diamond():
     lines = 1
     while lines <= 10:
@@ -21,7 +21,7 @@ def print_diamond():
 
 
 print_diamond()
-"""
+
 
 ######## Problem 2 ###############
 # Computer will guess a random number. 
@@ -31,7 +31,7 @@ print_diamond()
 # user guess 678 - print high
 # Get user input and print 'high' or 'low' until the user guesses the number correctly 
 # https://www.w3schools.com/python/ref_random_randint.asp - read this to learn how to create a random number
-"""
+
 import random
 
 computerNo = random.randint(3, 9)
@@ -49,7 +49,7 @@ while True:
     attempt += 1
 
 print("User guessed the number in", attempt, "attempts")
-"""
+
 
 """
 Example
@@ -73,7 +73,7 @@ High
 #Customers can buy one or more bags at a time.
 #The program ends when the sales reached Rs10000 or at least 10 bags are sold. 
 #Display total sales and total number of bags sold
-"""
+
 # Initialize variables
 redBags, whiteBags = 100, 200
 redBagPrice, whiteBagPrice = 1000, 1500
@@ -98,7 +98,7 @@ while totalSales < 10000 and totalBagsSold < 10:
 
 print("Total sales: Rs", totalSales)
 print("Total bags sold:", totalBagsSold)
-"""
+
 
 """
 Example
