@@ -3,15 +3,26 @@
 #After printing each line, wait for user input. If the user presses space, continue
 #If the users presses any other key, stop printing. Maximum 10 lines
 """
-def print_diamond(lines):
-    for i in range(lines):
-        print(' ' * (lines - i - 1) + '$' * (2 * i + 1))
+def print_diamond():
+    lines = 1
+    while lines <= 10:
+        spaces = 10 - lines
+        stars = 2 * lines - 1
+        
+        line = " " * spaces + "$" * stars
+        
+        print(line)
+        
         user_input = input()
-        if user_input != ' ':
+        if user_input != " ":
             break
+        
+        lines += 1
 
-print_diamond(10)
+
+print_diamond()
 """
+
 ######## Problem 2 ###############
 # Computer will guess a random number. 
 # user has to guess that number. for each guess, print 'High' or 'Low'
@@ -87,5 +98,18 @@ while totalSales < 10000 and totalBagsSold < 10:
 
 print("Total sales: Rs", totalSales)
 print("Total bags sold:", totalBagsSold)
+"""
 
+"""
+Example
+Enter the color of the bag (red/white): red
+Enter the quantity of bags: 1
+Enter the color of the bag (red/white): white
+Enter the quantity of bags: 4
+Enter the color of the bag (red/white): red
+Enter the quantity of bags: 2
+Enter the color of the bag (red/white): white
+Enter the quantity of bags: 3
+Total sales: Rs 13500
+Total bags sold: 10
 """
