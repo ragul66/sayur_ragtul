@@ -13,11 +13,12 @@ Row 5, col 7
 '''
 # next pattern is - empty diamond
 
-'''
+
 def draw_rectangle(width, length):
     for row in range(length):
         for col in range(width):
             if row == 0 or row == length - 1 or col == 0 or col == width - 1:
+                # ('0' for the first row/column and length-1 for the last row/column). 
                 print("*", end=" ")
             else:
                 print(" ", end=" ")
@@ -29,7 +30,7 @@ length = int(input("Enter the length of the rectangle: "))
 
 # Draw the rectangle
 draw_rectangle(width, length)
-'''
+
 
 
 """
@@ -47,7 +48,7 @@ Enter the length of the rectangle: 5
 #next pattern is empty diamond..
 
 
-
+"""
 def print_diamond(n):
     for i in range(n):
         for j in range(n - i - 1):
@@ -70,3 +71,4 @@ def print_diamond(n):
 
 n = int(input("Enter the size of the diamond: "))
 print_diamond(n)
+"""

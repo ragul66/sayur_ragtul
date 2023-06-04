@@ -6,6 +6,7 @@
 
 #init variables
 # Ask the first friend for the movies they like and save it in a list
+
 movies = input("What movies do you like? (Separate multiple movies with commas): ").split(',')
 
 # Convert movies into a list
@@ -75,6 +76,9 @@ for month, phoneCount in enumerate(monthlySalesList):
 
     # Store the current month's salary as the previous month's salary for the next iteration
     previousMonthSalary = currentMonthSalary
+
+
+
 """
 Example:
 This month's salary before additional bonus: 15000
