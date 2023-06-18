@@ -77,23 +77,23 @@ asanthVay
 
 
 
-# inputSentence = "Python Programming"
-# pigLatinKey = 'ay'
-# vowels = ['a','e','i','o','u']
+inputSentence = "Python Programming"
+pigLatinKey = 'ay'
+vowels = ['a','e','i','o','u']
 
-# for word in inputSentence.split(): #gets the word in a sentence
-#     #take the first chars until a vowel
-#     first_vowel_index = 0
-#     #FillinMissingCode - check if the word has more than one char
-#     if len(word) > 1:
-#         for index, char in enumerate(word): #returns both the index and the char in the word
-#             #FillinMissingCode - check if the char is vowel or not
-#             if char.lower() in vowels:
-#                 first_vowel_index = index
-#                 break
+for word in inputSentence.split(): #gets the word in a sentence
+    #take the first chars until a vowel
+    first_vowel_index = 0
+    #FillinMissingCode - check if the word has more than one char
+    if len(word) > 1:
+        for index, char in enumerate(word): #returns both the index and the char in the word
+            #FillinMissingCode - check if the char is vowel or not
+            if char.lower() in vowels:
+                first_vowel_index = index
+                break
 
-#     word = word[first_vowel_index:] + word[:first_vowel_index] + pigLatinKey
-#     print(word)
+    word = word[first_vowel_index:] + word[:first_vowel_index] + pigLatinKey
+    print(word)
 
 
 """

@@ -144,6 +144,7 @@ Also , print the employee who sold most phones in all 4 months added.
 
 def create_sales_data():
     
+    
 
 
 # Read the data from the file
